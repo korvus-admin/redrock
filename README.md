@@ -12,7 +12,7 @@ rather than a migration.
 
 ## Live demo
 
-`https://__GITHUB_OWNER__.github.io/redrock/` (GitHub Pages, served from `docs/`).
+`https://korvus-admin.github.io/redrock/` (GitHub Pages, served from `docs/`).
 Login for the demo: `admin` / `password`. Nothing persists between visits.
 
 ## Local development

@@ -12,12 +12,12 @@
   "steps": [
     {
       "step": "installPlugin",
-      "pluginData": { "resource": "git:directory", "url": "https://github.com/__GITHUB_REPO__", "ref": "main", "path": "wp-content/plugins/redrock-core" },
+      "pluginData": { "resource": "git:directory", "url": "https://github.com/korvus-admin/redrock", "ref": "main", "path": "wp-content/plugins/redrock-core" },
       "options": { "activate": true }
     },
     {
       "step": "installTheme",
-      "themeData": { "resource": "git:directory", "url": "https://github.com/__GITHUB_REPO__", "ref": "main", "path": "wp-content/themes/redrock" },
+      "themeData": { "resource": "git:directory", "url": "https://github.com/korvus-admin/redrock", "ref": "main", "path": "wp-content/themes/redrock" },
       "options": { "activate": true }
     },
     { "step": "setSiteOptions", "options": { "blogname": "Red Rock Surgery Center", "permalink_structure": "/%postname%/" } },
