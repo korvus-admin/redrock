@@ -1,0 +1,41 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"default"}} -->
+<main class="wp-block-group">
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--70)">
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-columns alignwide">
+<!-- wp:column {"width":"320px"} -->
+<div class="wp-block-column" style="flex-basis:320px">
+<!-- wp:post-featured-image {"style":{"border":{"radius":"16px"}}} /-->
+</div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:post-terms {"term":"rr_specialty","className":"rr-eyebrow"} /-->
+<!-- wp:post-title {"level":1} /-->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"core/post-meta","args":{"key":"rr_credentials"}}}},"textColor":"stone","fontSize":"large"} -->
+<p class="has-stone-color has-text-color has-large-font-size"></p>
+<!-- /wp:paragraph -->
+<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+<!-- wp:button {"metadata":{"bindings":{"url":{"source":"redrock/info","args":{"key":"appointment_url"}}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/request-appointment/">Request an appointment</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"className":"is-style-secondary"} -->
+<div class="wp-block-button is-style-secondary"><a class="wp-block-button__link wp-element-button" href="/providers/">All providers</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

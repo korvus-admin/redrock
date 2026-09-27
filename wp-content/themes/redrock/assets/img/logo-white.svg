@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" width="320" height="64" role="img" aria-label="Red Rock Surgery Center">
+  <g transform="translate(0,4)">
+    <path d="M4 52 L22 14 L34 34 L42 22 L60 52 Z" fill="#E07A5F"/>
+    <path d="M30 52 L42 30 L54 52 Z" fill="#FFFFFF" opacity=".85"/>
+    <path d="M4 52 H60" stroke="#7FD1D8" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="74" y="31" font-family="Manrope, Inter, system-ui, sans-serif" font-weight="800" font-size="22" fill="#FFFFFF" letter-spacing="-0.5">Red Rock</text>
+  <text x="74" y="52" font-family="Inter, system-ui, sans-serif" font-weight="500" font-size="12.5" fill="#7FD1D8" letter-spacing="2.2">SURGERY CENTER</text>
+</svg>

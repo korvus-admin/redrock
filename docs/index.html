@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Red Rock Surgery Center — website demo</title>
+<meta name="description" content="Proof-of-concept rebuild of redrocksurgerycenter.com as a modern WordPress block theme. Runs entirely in your browser.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#0B2545; --teal:#0E7C86; --rust:#B5482D; --sand:#F6F2EC; --stone:#5B6770; --line:#E6E1DA; --bg:#fff; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#0B1220; --ink:#F3F6FA; --sand:#131C2E; --stone:#A9B4C2; --line:#223049; } }
+  :root[data-theme="dark"] { --bg:#0B1220; --ink:#F3F6FA; --sand:#131C2E; --stone:#A9B4C2; --line:#223049; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 Inter, system-ui, sans-serif; }
+  h1,h2,h3 { font-family:Manrope, Inter, sans-serif; letter-spacing:-.015em; line-height:1.15; margin:0 0 .5rem }
+  .wrap { max-width:1100px; margin:0 auto; padding:0 16px }
+  header { padding:40px 0 24px }
+  .eyebrow { color:var(--teal); font:700 .78rem/1 Manrope, sans-serif; letter-spacing:.14em; text-transform:uppercase; margin-bottom:.75rem }
+  h1 { font-size:clamp(1.8rem,4vw,2.6rem) }
+  .lead { color:var(--stone); font-size:1.1rem; max-width:60ch }
+  .actions { display:flex; gap:.6rem; flex-wrap:wrap; margin:1.25rem 0 }
+  .btn { display:inline-block; padding:.75rem 1.3rem; border-radius:999px; font:700 .95rem Manrope, sans-serif; text-decoration:none; color:#fff; background:var(--rust); transition:transform .2s, background .2s }
+  .btn:hover { transform:translateY(-1px); background:var(--ink) }
+  .btn.alt { background:transparent; color:var(--ink); border:1.5px solid var(--line) }
+  .btn.alt:hover { background:var(--sand) }
+  .frame { border:1px solid var(--line); border-radius:16px; overflow:hidden; background:var(--sand); box-shadow:0 8px 32px rgba(11,37,69,.10); }
+  .frame-bar { display:flex; align-items:center; gap:.5rem; padding:.6rem .9rem; border-bottom:1px solid var(--line); font-size:.85rem; color:var(--stone) }
+  .frame-bar i { width:10px; height:10px; border-radius:50%; background:var(--line); display:inline-block }
+  iframe { display:block; width:100%; height:min(78vh, 900px); border:0; background:#fff }
+  .note { font-size:.9rem; color:var(--stone); margin:.6rem 0 0 }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:1rem; margin:40px 0 }
+  .card { background:var(--sand); border:1px solid var(--line); border-radius:16px; padding:1.4rem }
+  .card h3 { font-size:1.1rem }
+  .card p, .card li { color:var(--stone); font-size:.95rem; margin:0 }
+  .card ol { padding-left:1.2rem; margin:.5rem 0 0 }
+  .card li { margin-bottom:.35rem }
+  footer { padding:24px 0 48px; color:var(--stone); font-size:.85rem; border-top:1px solid var(--line) }
+  code { background:var(--sand); padding:.1rem .35rem; border-radius:6px; font-size:.9em }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="eyebrow">Proof of concept</div>
+  <h1>Red Rock Surgery Center, rebuilt for today</h1>
+  <p class="lead">The same site, the same WordPress, without the page-builder baggage. Below is a live copy running entirely in your browser: click around, then log in and try editing a page.</p>
+  <div class="actions">
+    <a class="btn" id="open" href="#" target="_blank" rel="noopener">Open full-screen demo</a>
+    <a class="btn alt" id="admin" href="#" target="_blank" rel="noopener">Open the dashboard</a>
+    <a class="btn alt" id="repo" href="#" target="_blank" rel="noopener">Source on GitHub</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="frame">
+    <div class="frame-bar"><i></i><i></i><i></i>&nbsp;redrocksurgerycenter.com (demo)</div>
+    <iframe id="pg" title="Red Rock Surgery Center demo" allow="clipboard-write" loading="eager"></iframe>
+  </div>
+  <p class="note">The demo takes 10–20 seconds to boot. Nothing is saved when you close the tab, so feel free to experiment. Demo login is <code>admin</code> / <code>password</code>.</p>
+
+  <section class="grid">
+    <div class="card">
+      <h3>What you're looking at</h3>
+      <p>A WordPress block theme plus one small plugin. All 12 services, 28 providers and the patient reviews from the current site are already loaded. No Elementor, no OceanWP, no jQuery.</p>
+    </div>
+    <div class="card">
+      <h3>Editing on the fly</h3>
+      <p>Every section is editable in the WordPress editor, but the layouts are locked. You can change any headline, paragraph, photo or button without being able to break the design. Phone, hours and address live in one settings screen and update everywhere.</p>
+    </div>
+    <div class="card">
+      <h3>Adding content</h3>
+      <p>New surgeons, services and testimonials are simple forms in the dashboard. The homepage and listing pages update automatically.</p>
+    </div>
+    <div class="card">
+      <h3>Going live is an update, not a rebuild</h3>
+      <ol>
+        <li>Upload the plugin zip and activate it.</li>
+        <li>Upload the theme zip and preview it on the existing site.</li>
+        <li>Publish when ready. Existing plugins, forms, URLs and payments keep working.</li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">Built by Korvus. Demo powered by WordPress Playground.</footer>
+
+<script>
+  var repo = '__GITHUB_REPO__';
+  var blueprint = 'https://raw.githubusercontent.com/' + repo + '/main/blueprint.json';
+  var base = 'https://playground.wordpress.net/?blueprint-url=' + encodeURIComponent(blueprint);
+  document.getElementById('pg').src = base + '&mode=seamless';
+  document.getElementById('open').href = base;
+  document.getElementById('admin').href = base + '&url=/wp-admin/';
+  document.getElementById('repo').href = 'https://github.com/' + repo;
+</script>
+</body>
+</html>

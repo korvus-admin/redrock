@@ -1,0 +1,38 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"default"}} -->
+<main class="wp-block-group">
+<!-- wp:group {"className":"rr-page-header","backgroundColor":"sand","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group rr-page-header has-sand-background-color has-background" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+<!-- wp:paragraph {"className":"rr-eyebrow"} --><p class="rr-eyebrow">Medical staff</p><!-- /wp:paragraph -->
+<!-- wp:heading {"level":1} --><h1 class="wp-block-heading">Our Providers</h1><!-- /wp:heading -->
+<!-- wp:paragraph {"fontSize":"large","textColor":"stone"} --><p class="has-stone-color has-text-color has-large-font-size">A multidisciplinary team of credentialed surgeons and physicians. All major anesthesia groups are credentialed at Red Rock.</p><!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--70)">
+<!-- wp:query {"queryId":20,"query":{"perPage":48,"pages":0,"offset":0,"postType":"rr_provider","order":"asc","orderBy":"menu_order","inherit":true},"align":"wide"} -->
+<div class="wp-block-query alignwide">
+<!-- wp:post-template {"style":{"spacing":{"blockGap":"1.5rem"}},"layout":{"type":"grid","columnCount":4}} -->
+<!-- wp:group {"className":"rr-provider-card is-style-card","layout":{"type":"constrained"}} -->
+<div class="wp-block-group rr-provider-card is-style-card">
+<!-- wp:post-featured-image {"style":{"border":{"radius":"12px"}}} /-->
+<!-- wp:post-title {"level":3,"isLink":true,"fontSize":"large"} /-->
+<!-- wp:post-terms {"term":"rr_specialty","textColor":"stone","fontSize":"small"} /-->
+</div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:query-pagination-previous /-->
+<!-- wp:query-pagination-numbers /-->
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination -->
+</div>
+<!-- /wp:query -->
+</div>
+<!-- /wp:group -->
+<!-- wp:pattern {"slug":"redrock/cta"} /-->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

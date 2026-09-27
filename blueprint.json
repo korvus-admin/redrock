@@ -1,0 +1,26 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "meta": {
+    "title": "Red Rock Surgery Center — theme + plugin demo",
+    "description": "Boots WordPress in the browser with the Red Rock block theme, the Red Rock Core plugin and demo content.",
+    "author": "korvus"
+  },
+  "landingPage": "/",
+  "login": true,
+  "preferredVersions": { "php": "8.3", "wp": "latest" },
+  "features": { "networking": true },
+  "steps": [
+    {
+      "step": "installPlugin",
+      "pluginData": { "resource": "git:directory", "url": "https://github.com/__GITHUB_REPO__", "ref": "main", "path": "wp-content/plugins/redrock-core" },
+      "options": { "activate": true }
+    },
+    {
+      "step": "installTheme",
+      "themeData": { "resource": "git:directory", "url": "https://github.com/__GITHUB_REPO__", "ref": "main", "path": "wp-content/themes/redrock" },
+      "options": { "activate": true }
+    },
+    { "step": "setSiteOptions", "options": { "blogname": "Red Rock Surgery Center", "permalink_structure": "/%postname%/" } },
+    { "step": "runPHP", "code": "<?php require '/wordpress/wp-load.php'; redrock_seed_demo( true );" }
+  ]
+}

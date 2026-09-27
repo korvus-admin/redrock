@@ -1,0 +1,17 @@
+{
+  "name": "redrock-surgery-center",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Red Rock Surgery Center - WordPress block theme + companion plugin (POC)",
+  "scripts": {
+    "start": "wp-env start",
+    "stop": "wp-env stop",
+    "destroy": "wp-env destroy",
+    "cli": "wp-env run cli wp",
+    "seed": "wp-env run cli wp eval 'redrock_seed_demo(true);'",
+    "zip": "bash scripts/build-zips.sh"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^10.0.0"
+  }
+}
